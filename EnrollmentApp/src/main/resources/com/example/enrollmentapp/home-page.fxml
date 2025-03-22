@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="homepage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="620.0" style="-fx-background-color: linear-gradient(to bottom, #7FC7D9, #0F1035);" stylesheets="@button-hover.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enrollmentapp.HomeController">
+   <children>
+      <Button fx:id="btnAdmin" layoutX="105.0" layoutY="288.0" mnemonicParsing="false" onAction="#onAdminButtonClicked" prefHeight="101.0" prefWidth="150.0" style="-fx-background-color: #7FC7D9; -fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="60" fitWidth="60">
+               <image>
+                  <Image url="@admin_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></InnerShadow>
+         </effect>
+      </Button>
+
+
+      <Button fx:id="btnStudent" layoutX="354.0" layoutY="288.0" mnemonicParsing="false" onAction="#onStudentButtonClicked" prefHeight="101.0" prefWidth="150.0" style="-fx-background-color: #7FC7D9; -fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="60" fitWidth="60">
+               <image>
+                  <Image url="@student_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></InnerShadow>
+         </effect>
+      </Button>
+
+
+      <Text fill="WHITE" layoutX="172.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME PAGE" textAlignment="CENTER" wrappingWidth="275.1367">
+         <font>
+            <Font name="Droid Serif" size="43.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
+      <Text fill="#0f1035" layoutX="27.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" wrappingWidth="188.13670000000002">
+         <font>
+            <Font name="Droid Serif" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#0f1035" layoutX="189.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the" textAlignment="CENTER" wrappingWidth="240.1367">
+         <font>
+            <Font name="Droid Serif" size="22.0" />
+         </font>
+      </Text>
+      <Label layoutX="144.0" layoutY="400.0" prefHeight="30.0" prefWidth="72.0" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="Century Schoolbook Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="385.0" layoutY="402.0" prefHeight="26.0" prefWidth="88.0" text="Student" textFill="WHITE">
+         <font>
+            <Font name="Century Schoolbook Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Text fill="WHITE" layoutX="27.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your role:" textAlignment="CENTER" wrappingWidth="240.1367">
+         <font>
+            <Font name="Droid Serif" size="22.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Pane layoutY="535.0" prefHeight="65.0" prefWidth="620.0" style="-fx-background-color: linear-gradient(to bottom, #7FC7D9, #0F1035);">
+         <children>
+            <Text fill="WHITE" layoutX="125.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lovely Shane P. Ong | BSCS-2 F3" textAlignment="CENTER" wrappingWidth="370.13673051757814">
+               <font>
+                  <Font name="Droid Serif" size="18.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Text>
+         </children></Pane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</Pane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="StudentPane" prefHeight="600.0" prefWidth="620.0" style="-fx-background-color: linear-gradient(to bottom, #0F1035, #7FC7D9);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enrollmentapp.StudentController">
+   <children>
+      <Text fill="WHITE" layoutX="104.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a course:" wrappingWidth="167.26953125">
+         <font>
+            <Font name="Century Schoolbook Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack2" layoutX="38.0" layoutY="23.0" mnemonicParsing="false" onAction="#onBackButtonClicked" prefHeight="28.0" prefWidth="61.0" style="-fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="26.0">
+               <image>
+                  <Image url="@back_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Corbel" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ComboBox fx:id="cbSelectCourse" layoutX="298.0" layoutY="77.0" onAction="#initialize" prefHeight="42.0" prefWidth="215.0" promptText="Select Course" style="-fx-background-radius: 30;">
+         <effect>
+            <Glow />
+         </effect></ComboBox>
+      <ListView fx:id="lvStudentsinCourse" layoutX="100.0" layoutY="213.0" prefHeight="335.0" prefWidth="420.0">
+         <effect>
+            <InnerShadow />
+         </effect></ListView>
+      <Text fill="WHITE" layoutX="100.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Enrolled Students:" wrappingWidth="264.40001525878904">
+         <font>
+            <Font name="Century Schoolbook Bold" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

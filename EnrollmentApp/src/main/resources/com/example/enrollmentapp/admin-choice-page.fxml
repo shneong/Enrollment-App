@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="homepage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="620.0" style="-fx-background-color: linear-gradient(to bottom, #0F1035, #7FC7D9);" stylesheets="@button-hover.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enrollmentapp.AdminChoiceController">
+   <children>
+
+      <Text fill="WHITE" layoutX="109.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose what you want to do:" wrappingWidth="283.1367">
+         <font>
+            <Font name="Droid Serif" size="19.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Button fx:id="btnEnrollStudents" layoutX="126.0" layoutY="234.0" mnemonicParsing="false" onAction="#onEnrollButton" prefHeight="132.0" prefWidth="369.0" style="-fx-background-color: #7FC7D9; -fx-background-radius: 30;" styleClass="rounded-button" text="                    Enroll Students" textFill="#140336">
+         <font>
+            <Font name="Century Schoolbook Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></InnerShadow>
+         </effect>
+      </Button>
+
+      <Button fx:id="btnModifyCourses" layoutX="126.0" layoutY="394.0" mnemonicParsing="false" onAction="#onModifyButton" prefHeight="132.0" prefWidth="369.0" style="-fx-background-color: #7FC7D9; -fx-background-radius: 30;" styleClass="rounded-button" text="                     Modify Courses" textFill="#070226">
+         <font>
+            <Font name="Century Schoolbook Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></InnerShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnBack" layoutX="39.0" layoutY="29.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="22.0" prefWidth="53.0" style="-fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="26.0">
+               <image>
+                  <Image url="@back_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Text fill="WHITE" layoutX="142.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HELLO, ADMIN!" textAlignment="CENTER" wrappingWidth="336.1366694824219">
+         <font>
+            <Font name="Droid Serif" size="40.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
+      <ImageView fitHeight="90.0" fitWidth="86.0" layoutX="173.0" layoutY="415.0">
+         <image>
+            <Image url="@modify_courses_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="86.0" layoutX="173.0" layoutY="260.0">
+         <image>
+            <Image url="@enroll_student_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</Pane>

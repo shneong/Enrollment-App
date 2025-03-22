@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="enrollmentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="620.0" style="-fx-background-color: linear-gradient(to bottom, #0F1035, #7FC7D9);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enrollmentapp.AdminModifyCoursesController">
+   <children>
+      <TextField fx:id="tfInputCourse" layoutX="272.0" layoutY="122.0" prefHeight="38.0" prefWidth="233.0" style="-fx-background-radius: 30;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font></TextField>
+      <Button fx:id="btnConfirmUpdate" layoutX="379.0" layoutY="364.0" mnemonicParsing="false" onAction="#onConfirmUpdateButtonClicked" prefHeight="31.0" prefWidth="153.0" style="-fx-background-radius: 30;" text="Confirm Update">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button fx:id="btnRemoveSelected" layoutX="374.0" layoutY="471.0" mnemonicParsing="false" onAction="#onRemoveSelectedButtonClicked" style="-fx-background-radius: 30;" text="Remove Selected">
+         <graphic>
+            <ImageView fitHeight="18" fitWidth="20">
+               <image>
+                  <Image url="@delete_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <ListView fx:id="enrolledList" layoutX="52.0" layoutY="269.0" prefHeight="283.0" prefWidth="233.0">
+         <effect>
+            <InnerShadow />
+         </effect></ListView>
+      <Text layoutX="52.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of available courses:" wrappingWidth="174.13671875">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="0.46590908323273517" startX="0.6448863636363635" startY="0.03030307365186287">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.39259257912635803" green="0.7975308895111084" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Text>
+      <Label layoutX="109.0" layoutY="122.0" prefHeight="38.0" prefWidth="153.0" text="Enter Course:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label fx:id="pane" alignment="CENTER" layoutX="177.0" layoutY="41.0" prefHeight="35.0" prefWidth="292.0" text="MODIFY COURSES" textFill="WHITE">
+         <font>
+            <Font name="Droid Serif Bold" size="29.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Button fx:id="btnBackToHome" layoutX="33.0" layoutY="28.0" mnemonicParsing="false" onAction="#onBackButtonClicked" prefHeight="30.0" prefWidth="70.0" style="-fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="20" fitWidth="26.0">
+               <image>
+                  <Image url="@back_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnAddCourse" layoutX="322.0" layoutY="182.0" mnemonicParsing="false" onAction="#onAddCourseButtonClicked" prefHeight="31.0" prefWidth="133.0" style="-fx-background-radius: 30;" text="Add Course">
+         <graphic>
+            <ImageView fitHeight="18" fitWidth="20">
+               <image>
+                  <Image url="@add_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="tfUpdateSelectedCourseInto" layoutX="334.0" layoutY="314.0" prefHeight="38.0" prefWidth="242.0" promptText="Enter new course..." style="-fx-background-radius: 30;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="334.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update selected course into:" wrappingWidth="341.13671875">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <fill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.2462121537237456" endY="0.31439391139781836">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.4000000059604645" green="0.8199999928474426" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</Pane>
